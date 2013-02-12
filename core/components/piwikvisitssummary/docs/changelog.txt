@@ -1,0 +1,11 @@
+************************
+*                      *
+*  PiwikVisitsSummary  *
+*      Changelog       *
+*                      *
+************************
+
+
+PiwikVisitsSummary 0.0.1-dev (12.02.2013)
+===========================================
+- inital dev release
