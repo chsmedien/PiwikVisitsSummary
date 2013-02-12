@@ -17,7 +17,6 @@ define('PKG_RELEASE','dev-2');
 $root = dirname(dirname(__FILE__)).'/';
 $sources = array(
     'root' => $root,
-    'root' => $root,
     'build' => $root .'_build/',
     'resolvers' => $root . '_build/resolvers/',
     'validators' => $root . '_build/validators/',
@@ -53,8 +52,6 @@ $builder = new modPackageBuilder($modx);
 $builder->createPackage(PKG_NAME_LOWER,PKG_VERSION,PKG_RELEASE);
 $builder->registerNamespace(PKG_NAME_LOWER,false,true,'{core_path}components/'.PKG_NAME_LOWER.'/');
 $modx->log(modX::LOG_LEVEL_INFO,'Created Transport Package and Namespace.');
-
-$modx->log(modX::LOG_LEVEL_INFO,'Adding file resolvers to category...');
 
 
 
@@ -104,11 +101,11 @@ $attr = array(
     xPDOTransport::UPDATE_OBJECT => true,
     xPDOTransport::RELATED_OBJECTS => true,
     xPDOTransport::RELATED_OBJECT_ATTRIBUTES => array (
-        'Snippets' => array(
-            xPDOTransport::PRESERVE_KEYS => false,
-            xPDOTransport::UPDATE_OBJECT => true,
-            xPDOTransport::UNIQUE_KEY => 'name',
-        ),
+//        'Snippets' => array(
+//            xPDOTransport::PRESERVE_KEYS => false,
+//            xPDOTransport::UPDATE_OBJECT => true,
+//            xPDOTransport::UNIQUE_KEY => 'name',
+//        ),
         'Chunks' => array(
             xPDOTransport::PRESERVE_KEYS => false,
             xPDOTransport::UPDATE_OBJECT => true,
@@ -119,10 +116,10 @@ $attr = array(
 $vehicle = $builder->createVehicle($category, $attr);
 
 $modx->log(modX::LOG_LEVEL_INFO, 'Adding file resolvers to category...');
-$vehicle->resolve('file', array(
-    'source' => $sources['source_assets'],
-    'target' => "return MODX_ASSETS_PATH . 'components/';",
-));
+//$vehicle->resolve('file', array(
+//    'source' => $sources['source_assets'],
+//    'target' => "return MODX_ASSETS_PATH . 'components/';",
+//));
 $vehicle->resolve('file', array(
     'source' => $sources['source_core'],
     'target' => "return MODX_CORE_PATH . 'components/';",
@@ -134,7 +131,7 @@ $builder->putVehicle($vehicle);
 
 
 /* modDashboardWidget */
-$widgets = include $sources['data'].'transport.widget.php';
+$widgets = include $sources['data'].'transport.widgets.php';
 if (is_array($widgets)) {
     $attributes = array (
         xPDOTransport::PRESERVE_KEYS => false,

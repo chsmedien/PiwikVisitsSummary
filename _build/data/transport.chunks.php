@@ -8,3 +8,5 @@ $chunks[1]->fromArray(array(
     'description' => 'piwikvisitssummary.chunk_desc',
     'snippet' => file_get_contents($sources['chunks'].'iframe.chunk.tpl'),
 ));
+
+return $chunks;
