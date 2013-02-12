@@ -9,11 +9,11 @@ class modDashboardWidgetPiwikVisitsSummary extends modDashboardWidgetInterface {
      * @return string
      */
     public function render() {
-    	
+
     	$settings = array();
-    	$settings['url'] = $modx->getOption('piwikvisitssummary.url',null,'-1');
-    	$settings['siteid'] = $modx->getOption('piwikvisitssummary.siteid',null,'-1');
-    	$settings['token_auth'] = $modx->getOption('piwikvisitssummary.token_auth',null,'-1');
+    	$settings['url'] = $this->modx->getOption('piwikvisitssummary.url',null,'-1');
+    	$settings['siteid'] = $this->modx->getOption('piwikvisitssummary.siteid',null,'-1');
+    	$settings['token_auth'] = $this->modx->getOption('piwikvisitssummary.token_auth',null,'-1');
     	
     	if ($settings['url'] == '-1' || $settings['siteid'] == '-1' || $settings['token_auth'] == '-1') {
 	    	return $this->modx->lexicon('piwikvisitssummary.settings_not_found');
@@ -23,7 +23,7 @@ class modDashboardWidgetPiwikVisitsSummary extends modDashboardWidgetInterface {
 	    	return $this->modx->lexicon('piwikvisitssummary.settings_default_value');
     	}
     	
-    	return $modx->getChunk('piwikvisitssummary.iframe',$settings);
+    	return $this->modx->getChunk('piwikvisitssummary.iframe',$settings);
     	
     }
 }
