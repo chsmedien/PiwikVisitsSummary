@@ -12,7 +12,7 @@ ini_set('display_errors',1);
 define('PKG_NAME','PiwikVisitsSummary');
 define('PKG_NAME_LOWER',strtolower(PKG_NAME));
 define('PKG_VERSION','1.0.0');
-define('PKG_RELEASE','rc1');
+define('PKG_RELEASE','pl');
 
 /* define sources */
 $root = dirname(dirname(__FILE__)).'/';
