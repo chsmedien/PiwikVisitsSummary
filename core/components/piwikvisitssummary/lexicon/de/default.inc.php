@@ -39,3 +39,4 @@ $_lang['piwikvisitssummary.desc'] = 'Zeigt den VisitsSummary-Graph Ihrer Piwik-S
 $_lang['piwikvisitssummary.settings_not_found'] = 'Die Piwik Systemeinstellungen konnten nicht gefunden werden. Bitte stellen Sie sicher, dass piwikvisitssummary.url, piwikvisitssummary.siteid und piwikvisitssummary.token_auth existieren.';
 $_lang['piwikvisitssummary.settings_default_value'] = 'Einige Piwik Systemeinstellungen haben noch ihren Standardwert. Bitte gehen Sie zu den Systemeinstellungen und passen Sie die Einstellungen an.';
 $_lang['piwikvisitssummary.chunk_desc'] = 'iFrame Tpl für das Piwik Dashboard Widget';
+$_lang['piwikvisitssummary.trackingcode_desc'] = 'Enthält den Piwik Tracking-Code mit den Einstellungen von PiwikVisitsSummary.';

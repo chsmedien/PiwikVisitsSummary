@@ -1,11 +1,18 @@
-************************
-*                      *
-*  PiwikVisitsSummary  *
-*      Changelog       *
-*                      *
-************************
+PiwikVisitsSummary Changelog
+===========================================
 
 
-PiwikVisitsSummary 0.0.1-dev (12.02.2013)
+PiwikVisitsSummary 1.0.0-pl (12.02.2013)
+===========================================
+- added chunk with piwik tracking code
+- inital MODX package release
+
+
+PiwikVisitsSummary 0.1.0-dev1 (12.02.2013)
+===========================================
+- fixed some critical errors
+
+
+PiwikVisitsSummary 0.0.1-dev1 (12.02.2013)
 ===========================================
 - inital dev release

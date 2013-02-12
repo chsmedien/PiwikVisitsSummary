@@ -39,3 +39,4 @@ $_lang['piwikvisitssummary.desc'] = 'Shows the VisitsSummary Graph from your Piw
 $_lang['piwikvisitssummary.settings_not_found'] = 'Piwik settings not found. Please make sure piwikvisitssummary.url, piwikvisitssummary.siteid and piwikvisitssummary.token_auth are added to your MODX system settings.';
 $_lang['piwikvisitssummary.settings_default_value'] = 'Some of the Piwik settings still have their default value, please enter your own values!';
 $_lang['piwikvisitssummary.chunk_desc'] = 'The iframe tpl for the piwik dashboard widget.';
+$_lang['piwikvisitssummary.trackingcode_desc'] = 'Contains the tracking code for piwik based on your settings for PiwikVisitsSummary.';
