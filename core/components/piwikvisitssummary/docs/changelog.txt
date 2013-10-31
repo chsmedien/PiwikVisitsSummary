@@ -1,6 +1,11 @@
 PiwikVisitsSummary Changelog
 ===========================================
 
+PiwikVisitsSummary 1.0.1-pl (31.10.2013)
+===========================================
+- possible link to full statistics
+- no default entries in system settings
+- language for system setings
 
 PiwikVisitsSummary 1.0.0-pl (12.02.2013)
 ===========================================

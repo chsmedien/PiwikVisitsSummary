@@ -4,30 +4,46 @@ $settings = array();
 $settings[1] = $modx->newObject('modSystemSetting');
 $settings[1]->fromArray(array(
     'key' => 'piwikvisitssummary.url',
-    'value' => 'yourdomain.com/path-to-piwik/',
+    'value' => '',
     'xtype' => 'textfield',
     'namespace' => 'piwikvisitssummary',
-    'area' => '',
+    'area' => 'site',
 ), '', true, true);
-
 
 $settings[2] = $modx->newObject('modSystemSetting');
 $settings[2]->fromArray(array(
     'key' => 'piwikvisitssummary.siteid',
-    'value' => '0',
+    'value' => '',
     'xtype' => 'textfield',
     'namespace' => 'piwikvisitssummary',
-    'area' => '',
+    'area' => 'site',
 ), '', true, true);
-
 
 $settings[3] = $modx->newObject('modSystemSetting');
 $settings[3]->fromArray(array(
     'key' => 'piwikvisitssummary.token_auth',
-    'value' => '1234dce9c6a03b81234f8216f9fc1234',
+    'value' => '',
     'xtype' => 'textfield',
     'namespace' => 'piwikvisitssummary',
-    'area' => '',
+    'area' => 'site',
+), '', true, true);
+
+$settings[4] = $modx->newObject('modSystemSetting');
+$settings[4]->fromArray(array(
+    'key' => 'piwikvisitssummary.user',
+    'value' => '',
+    'xtype' => 'textfield',
+    'namespace' => 'piwikvisitssummary',
+    'area' => 'site',
+), '', true, true);
+
+$settings[5] = $modx->newObject('modSystemSetting');
+$settings[5]->fromArray(array(
+    'key' => 'piwikvisitssummary.password',
+    'value' => '',
+    'xtype' => 'textfield',
+    'namespace' => 'piwikvisitssummary',
+    'area' => 'site',
 ), '', true, true);
 
 return $settings;

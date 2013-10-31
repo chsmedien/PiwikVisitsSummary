@@ -5,26 +5,24 @@
  */
 class modDashboardWidgetPiwikVisitsSummary extends modDashboardWidgetInterface {
 
-    /**
-     * @return string
-     */
-    public function render() {
+	/**
+	 * @return string
+	 */
+	public function render() {
 
-    	$settings = array();
-    	$settings['url'] = $this->modx->getOption('piwikvisitssummary.url',null,'-1');
-    	$settings['siteid'] = $this->modx->getOption('piwikvisitssummary.siteid',null,'-1');
-    	$settings['token_auth'] = $this->modx->getOption('piwikvisitssummary.token_auth',null,'-1');
-    	
-    	if ($settings['url'] == '-1' || $settings['siteid'] == '-1' || $settings['token_auth'] == '-1') {
-	    	return $this->modx->lexicon('piwikvisitssummary.settings_not_found');
-    	}
-    	
-    	if ($settings['url'] == 'yourdomain.com/path-to-piwik/' || $settings['siteid'] == '0' || $settings['token_auth'] == '1234dce9c6a03b81234f8216f9fc1234') {
-	    	return $this->modx->lexicon('piwikvisitssummary.settings_default_value');
-    	}
-    	
-    	return $this->modx->getChunk('piwikvisitssummary.iframe',$settings);
-    	
-    }
+		$settings = array();
+		$settings['url'] = $this->modx->getOption('piwikvisitssummary.url', null, FALSE, TRUE);
+		$settings['siteid'] = $this->modx->getOption('piwikvisitssummary.siteid', null, FALSE, TRUE);
+		$settings['token_auth'] = $this->modx->getOption('piwikvisitssummary.token_auth', null, FALSE, TRUE);
+		$settings['user'] = $this->modx->getOption('piwikvisitssummary.user', null, FALSE, TRUE);
+		$settings['password'] = $this->modx->getOption('piwikvisitssummary.password', null, FALSE, TRUE);
+
+		if ($settings['url'] == FALSE || $settings['siteid'] == FALSE || $settings['token_auth'] == FALSE) {
+			return $this->modx->lexicon('piwikvisitssummary.settings_not_found');
+		}
+
+		return $this->modx->getChunk('piwikvisitssummary.iframe', $settings);
+	}
+
 }
 return 'modDashboardWidgetPiwikVisitsSummary';
