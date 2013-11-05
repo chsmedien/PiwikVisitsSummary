@@ -36,7 +36,16 @@
 
 $_lang['piwikvisitssummary.title'] = 'Piwik Visits Summary';
 $_lang['piwikvisitssummary.desc'] = 'Shows the VisitsSummary Graph from your Piwik Installation';
-$_lang['piwikvisitssummary.settings_not_found'] = 'Piwik settings not found. Please make sure piwikvisitssummary.url, piwikvisitssummary.siteid and piwikvisitssummary.token_auth are added to your MODX system settings.';
-$_lang['piwikvisitssummary.settings_default_value'] = 'Some of the Piwik settings still have their default value, please enter your own values!';
-$_lang['piwikvisitssummary.chunk_desc'] = 'The iframe tpl for the piwik dashboard widget.';
-$_lang['piwikvisitssummary.trackingcode_desc'] = 'Contains the tracking code for piwik based on your settings for PiwikVisitsSummary.';
+$_lang['piwikvisitssummary.linktext'] = 'Full Statistics';
+$_lang['piwikvisitssummary.settings_not_found'] = 'Piwik settings empty. Please make sure that piwikvisitssummary.url, piwikvisitssummary.siteid and piwikvisitssummary.token_auth are filled in your MODX system settings.';
+
+$_lang['setting_piwikvisitssummary.url'] = 'URL of the Piwik installation';
+$_lang['setting_piwikvisitssummary.url_desc'] = 'Please enter the URL of the Piwik installation without protocol and trailing slash.';
+$_lang['setting_piwikvisitssummary.siteid'] = 'Piwik Site ID';
+$_lang['setting_piwikvisitssummary.siteid_desc'] = 'Please enter the Piwik Site ID.';
+$_lang['setting_piwikvisitssummary.token_auth'] = 'Piwik Token Auth';
+$_lang['setting_piwikvisitssummary.token_auth_desc'] = 'Please enter the token auth of a Piwik user with view permission for the Piwik Site ID.';
+$_lang['setting_piwikvisitssummary.user'] = 'Piwik Username';
+$_lang['setting_piwikvisitssummary.user_desc'] = 'Please enter the username of a Piwik user with view permission for the Piwik Site ID. Leave empty if no link to full statistics should be generated.';
+$_lang['setting_piwikvisitssummary.password'] = 'Piwik Password';
+$_lang['setting_piwikvisitssummary.password_desc'] = 'Please enter the MD5 coded password of a Piwik user with view permission for the Piwik Site ID. Leave empty if no link to full statistics should be generated.';

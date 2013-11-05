@@ -36,7 +36,16 @@
 
 $_lang['piwikvisitssummary.title'] = 'Piwik: Graph der letzten Besuche';
 $_lang['piwikvisitssummary.desc'] = 'Zeigt den VisitsSummary-Graph Ihrer Piwik-Statistik an';
-$_lang['piwikvisitssummary.settings_not_found'] = 'Die Piwik Systemeinstellungen konnten nicht gefunden werden. Bitte stellen Sie sicher, dass piwikvisitssummary.url, piwikvisitssummary.siteid und piwikvisitssummary.token_auth existieren.';
-$_lang['piwikvisitssummary.settings_default_value'] = 'Einige Piwik Systemeinstellungen haben noch ihren Standardwert. Bitte gehen Sie zu den Systemeinstellungen und passen Sie die Einstellungen an.';
-$_lang['piwikvisitssummary.chunk_desc'] = 'iFrame Tpl für das Piwik Dashboard Widget';
-$_lang['piwikvisitssummary.trackingcode_desc'] = 'Enthält den Piwik Tracking-Code mit den Einstellungen von PiwikVisitsSummary.';
+$_lang['piwikvisitssummary.linktext'] = 'Gesamtstatistik';
+$_lang['piwikvisitssummary.settings_not_found'] = 'Die Piwik Systemeinstellungen sind leer. Bitte stellen Sie sicher, dass piwikvisitssummary.url, piwikvisitssummary.siteid und piwikvisitssummary.token_auth in den MODX Systemeinstellungen gefüllt sind.';
+
+$_lang['setting_piwikvisitssummary.url'] = 'URL der Piwik Installation';
+$_lang['setting_piwikvisitssummary.url_desc'] = 'Bitte geben Sie die URL der Piwik Installation ohne Protokoll und abschließenden Querstrich ein.';
+$_lang['setting_piwikvisitssummary.siteid'] = 'Piwik Site ID';
+$_lang['setting_piwikvisitssummary.siteid_desc'] = 'Bitte geben Sie die Piwik Site ID ein';
+$_lang['setting_piwikvisitssummary.token_auth'] = 'Piwik Token Auth';
+$_lang['setting_piwikvisitssummary.token_auth_desc'] = 'Bitte geben Sie Token Auth eines Piwik Benutzers mit Ansicht Zugriff für die angegebene Site ID ein.';
+$_lang['setting_piwikvisitssummary.user'] = 'Piwik Benutzername';
+$_lang['setting_piwikvisitssummary.user_desc'] = 'Bitte geben Sie den Usernamen eines Piwik Benutzers mit Ansicht Zugriff für die angegebene Site ID ein. Bitte leer lassen, wenn der Link zur Gesamtstatistik nicht ausgegeben werden soll.';
+$_lang['setting_piwikvisitssummary.password'] = 'Piwik Passwort';
+$_lang['setting_piwikvisitssummary.password_desc'] = 'Bitte geben Sie das MD5 kodierte Passwort ihres Piwik Benutzers mit Ansicht Zugriff für die angegebene Site ID ein. Bitte leer lassen, wenn der Link zur Gesamtstatistik nicht ausgegeben werden soll.';
