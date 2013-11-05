@@ -37,8 +37,10 @@
 $_lang['piwikvisitssummary.title'] = 'Piwik: Graph der letzten Besuche';
 $_lang['piwikvisitssummary.desc'] = 'Zeigt den VisitsSummary-Graph Ihrer Piwik-Statistik an';
 $_lang['piwikvisitssummary.linktext'] = 'Gesamtstatistik';
-$_lang['piwikvisitssummary.settings_not_found'] = 'Die Piwik Systemeinstellungen sind leer. Bitte stellen Sie sicher, dass piwikvisitssummary.url, piwikvisitssummary.siteid und piwikvisitssummary.token_auth in den MODX Systemeinstellungen gefüllt sind.';
+$_lang['piwikvisitssummary.settings_not_found'] = 'Die Piwik Systemeinstellungen sind leer. Bitte stellen Sie sicher, dass piwikvisitssummary.protocol, piwikvisitssummary.url, piwikvisitssummary.siteid und piwikvisitssummary.token_auth in den MODX Systemeinstellungen gefüllt sind.';
 
+$_lang['setting_piwikvisitssummary.protocol'] = 'Protokoll für Verbindung zu Piwik';
+$_lang['setting_piwikvisitssummary.protocol_desc'] = 'Wenn Ihre Piwik Installation das "https" Protokoll verwendet, können Sie es hier als Protokoll setzen. Ansonsten belassen Sie diese Einstellung bei "http".';
 $_lang['setting_piwikvisitssummary.url'] = 'URL der Piwik Installation';
 $_lang['setting_piwikvisitssummary.url_desc'] = 'Bitte geben Sie die URL der Piwik Installation ohne Protokoll und abschließenden Querstrich ein.';
 $_lang['setting_piwikvisitssummary.siteid'] = 'Piwik Site ID';

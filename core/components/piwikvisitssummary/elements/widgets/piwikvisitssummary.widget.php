@@ -11,13 +11,14 @@ class modDashboardWidgetPiwikVisitsSummary extends modDashboardWidgetInterface {
 	public function render() {
 
 		$settings = array();
+		$settings['protocol'] = $this->modx->getOption('piwikvisitssummary.protocol', null, FALSE, TRUE);
 		$settings['url'] = $this->modx->getOption('piwikvisitssummary.url', null, FALSE, TRUE);
 		$settings['siteid'] = $this->modx->getOption('piwikvisitssummary.siteid', null, FALSE, TRUE);
 		$settings['token_auth'] = $this->modx->getOption('piwikvisitssummary.token_auth', null, FALSE, TRUE);
 		$settings['user'] = $this->modx->getOption('piwikvisitssummary.user', null, FALSE, TRUE);
 		$settings['password'] = $this->modx->getOption('piwikvisitssummary.password', null, FALSE, TRUE);
 
-		if ($settings['url'] == FALSE || $settings['siteid'] == FALSE || $settings['token_auth'] == FALSE) {
+		if ($settings['protocol'] == FALSE || $settings['url'] == FALSE || $settings['siteid'] == FALSE || $settings['token_auth'] == FALSE) {
 			return $this->modx->lexicon('piwikvisitssummary.settings_not_found');
 		}
 

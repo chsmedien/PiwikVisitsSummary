@@ -1,4 +1,4 @@
-<div id="widgetIframe" style="width:100%;">
-<iframe width="100%" height="240" src="http://[[+url]]/index.php?module=Widgetize&action=iframe&language=[[++manager_language]]&columns[]=nb_visits&widget=1&moduleToWidgetize=VisitsSummary&actionToWidgetize=getEvolutionGraph&idSite=[[+siteid]]&period=day&date=today&disableLink=1&widget=1&token_auth=[[+token_auth]]" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+<div id="widgetIframe" style="margin:-10px;height:240px;">
+<iframe width="100%" height="450" src="[[+protocol]]://[[+url]]/index.php?module=Widgetize&action=iframe&language=[[++manager_language]]&columns[]=nb_visits&widget=1&moduleToWidgetize=VisitsSummary&actionToWidgetize=getEvolutionGraph&idSite=[[+siteid]]&period=day&date=today&disableLink=1&widget=1&token_auth=[[+token_auth]]" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 </div>
-[[+user:notempty=`<div id="link"><a href="http://[[+url]]/index.php?module=Login&amp;action=logme&amp;login=[[+user]]&amp;password=[[+password]]" target="_blank">[[%piwikvisitssummary.linktext]]</a></div>`]]
+[[+user:notempty=`<div id="link"><a href="[[+protocol]]://[[+url]]/index.php?module=Login&amp;action=logme&amp;login=[[+user]]&amp;password=[[+password]]" target="_blank">[[%piwikvisitssummary.linktext]]</a></div>`]]

@@ -1,6 +1,12 @@
 PiwikVisitsSummary Changelog
 ===========================================
 
+PiwikVisitsSummary 1.0.2-pl (05.11.2013)
+===========================================
+- added system setting for default protocol
+- increased iframe size to reduce unsed space
+- re-add posibility to scroll in the iframe to view annotations
+
 PiwikVisitsSummary 1.0.1-pl (31.10.2013)
 ===========================================
 - possible link to full statistics
