@@ -64,5 +64,4 @@ $settings[7]->fromArray(array(
     'area' => 'site',
 ), '', true, true);
 
-
 return $settings;

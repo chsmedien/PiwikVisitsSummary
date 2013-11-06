@@ -1,6 +1,10 @@
 PiwikVisitsSummary Changelog
 ===========================================
 
+PiwikVisitsSummary 1.0.4-pl (06.11.2013)
+===========================================
+- force trailing slash for piwik url
+
 PiwikVisitsSummary 1.0.3-pl (06.11.2013)
 ===========================================
 - moved login button into the widget header

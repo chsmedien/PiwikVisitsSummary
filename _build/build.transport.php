@@ -10,11 +10,18 @@ set_time_limit(0);
 /* define package */
 define('PKG_NAME', 'PiwikVisitsSummary');
 define('PKG_NAME_LOWER', strtolower(PKG_NAME));
-define('PKG_VERSION', '1.0.3');
+define('PKG_VERSION', '1.0.4');
 define('PKG_RELEASE', 'pl');
+
 
 /* define sources */
 $root = dirname(dirname(__FILE__)) . '/';
+
+/* override with your own defines here (see build.config.sample.php) */
+require_once $root . '_build/' . 'build.config.php';
+require_once MODX_CORE_PATH . 'model/modx/modx.class.php';
+require_once $root . '_build/' . 'includes/functions.php';
+
 $sources = array(
 	'root' => $root,
 	'build' => $root . '_build/',
@@ -23,25 +30,22 @@ $sources = array(
 	'resolvers' => $root . '_build/resolvers/',
 	'properties' => $root . '_build/data/properties/',
 	'permissions' => $root . '_build/data/permissions/',
-	'chunks' => $root . 'core/components/' . PKG_NAME_LOWER . '/elements/chunks/',
-	'snippets' => $root . 'core/components/' . PKG_NAME_LOWER . '/elements/snippets/',
-	'plugins' => $root . 'core/components/' . PKG_NAME_LOWER . '/elements/plugins/',
-	'lexicon' => $root . 'core/components/' . PKG_NAME_LOWER . '/lexicon/',
-	'docs' => $root . 'core/components/' . PKG_NAME_LOWER . '/docs/',
-	'pages' => $root . 'core/components/' . PKG_NAME_LOWER . '/elements/pages/',
-	'templates' => $root . 'core/components/' . PKG_NAME_LOWER . '/elements/templates/',
+	'chunks' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER . '/elements/chunks/',
+	'snippets' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER . '/elements/snippets/',
+	'plugins' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER . '/elements/plugins/',
+	'lexicon' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER . '/lexicon/',
+	'docs' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER . '/docs/',
+	'pages' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER . '/elements/pages/',
+	'templates' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER . '/elements/templates/',
 	'validators' => $root . '_build/validators/',
 	'subpackages' => $root . '_build/subpackages/',
-	'model' => $root . 'core/components/' . PKG_NAME_LOWER . '/model/',
+	'model' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER . '/model/',
 	'source_assets' => $root . 'assets/components/' . PKG_NAME_LOWER,
-	'source_core' => $root . 'core/components/' . PKG_NAME_LOWER,
+	'source_core' => MODX_CORE_PATH . '/components/' . PKG_NAME_LOWER,
 );
 unset($root);
 
-/* override with your own defines here (see build.config.sample.php) */
-require_once $sources['build'] . 'build.config.php';
-require_once MODX_CORE_PATH . 'model/modx/modx.class.php';
-require_once $sources['build'] . 'includes/functions.php';
+
 
 $modx = new modX();
 $modx->initialize('mgr');
