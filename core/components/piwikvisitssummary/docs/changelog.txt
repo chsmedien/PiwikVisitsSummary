@@ -4,6 +4,7 @@ PiwikVisitsSummary Changelog
 PiwikVisitsSummary 1.0.3-pl (06.11.2013)
 ===========================================
 - moved login button into the widget header
+- added setting for date parameter of widget
 
 PiwikVisitsSummary 1.0.2-pl (05.11.2013)
 ===========================================

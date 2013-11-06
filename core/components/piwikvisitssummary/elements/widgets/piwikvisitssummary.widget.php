@@ -15,6 +15,7 @@ class modDashboardWidgetPiwikVisitsSummary extends modDashboardWidgetInterface {
 		$settings['url'] = $this->modx->getOption('piwikvisitssummary.url', null, FALSE, TRUE);
 		$settings['siteid'] = $this->modx->getOption('piwikvisitssummary.siteid', null, FALSE, TRUE);
 		$settings['token_auth'] = $this->modx->getOption('piwikvisitssummary.token_auth', null, FALSE, TRUE);
+		$settings['visitssummary.date'] = $this->modx->getOption('piwikvisitssummary.visitssummary.date', null, 'today', TRUE);
 		$settings['user'] = $this->modx->getOption('piwikvisitssummary.user', null, FALSE, TRUE);
 		$settings['password'] = $this->modx->getOption('piwikvisitssummary.password', null, FALSE, TRUE);
 

@@ -55,4 +55,14 @@ $settings[6]->fromArray(array(
     'area' => 'site',
 ), '', true, true);
 
+$settings[7] = $modx->newObject('modSystemSetting');
+$settings[7]->fromArray(array(
+    'key' => 'piwikvisitssummary.visitssummary.date',
+    'value' => 'today',
+    'xtype' => 'textfield',
+    'namespace' => 'piwikvisitssummary',
+    'area' => 'site',
+), '', true, true);
+
+
 return $settings;
