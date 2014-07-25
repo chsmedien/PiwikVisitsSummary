@@ -39,8 +39,8 @@ $_lang['piwikvisitssummary.desc'] = 'Shows the VisitsSummary Graph from your Piw
 $_lang['piwikvisitssummary.linktext'] = 'Full Statistics';
 $_lang['piwikvisitssummary.settings_not_found'] = 'Piwik settings empty. Please make sure that piwikvisitssummary.protocol, piwikvisitssummary.url, piwikvisitssummary.siteid and piwikvisitssummary.token_auth are filled in your MODX system settings.';
 
-$_lang['setting_piwikvisitssummary.url'] = 'Protocol for connection to Piwik';
-$_lang['setting_piwikvisitssummary.url_desc'] = 'If your Piwik installation makes use of "https" you can set it here as default. Otherwise use the default "http" protocol.';
+$_lang['setting_piwikvisitssummary.protocol'] = 'Protocol for connection to Piwik';
+$_lang['setting_piwikvisitssummary.protocol_desc'] = 'If your Piwik installation makes use of "https" you can set it here as default. Otherwise use the default "http" protocol.';
 $_lang['setting_piwikvisitssummary.url'] = 'URL of the Piwik installation';
 $_lang['setting_piwikvisitssummary.url_desc'] = 'Please enter the URL of the Piwik installation without protocol. The URL must end with a slash.';
 $_lang['setting_piwikvisitssummary.siteid'] = 'Piwik Site ID';
